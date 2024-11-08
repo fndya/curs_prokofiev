@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.UniversalTableController">
+
+   <TableView fx:id="tableView" prefHeight="300.0" prefWidth="431.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="0" />
+
+
+   <Button mnemonicParsing="false" onAction="#handleBackToMenu" text="Назад в меню" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+   <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddRecord" text="Добавить" GridPane.rowIndex="4" />
+   <Button fx:id="updateButton" mnemonicParsing="false" onAction="#handleUpdateRecord" text="Редактировать" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+   <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDeleteRecord" text="Удалить" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+</GridPane>

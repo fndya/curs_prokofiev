@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.RegistrationViewController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="114.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.7251184834123223">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8447466492652893" green="0.9399999976158142" blue="0.41359999775886536" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8026315569877625" green="0.49545159935951233" blue="0.2266691029071808" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="20.0" fill="WHITE" height="52.0" layoutX="323.0" layoutY="43.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" width="200.0" />
+      <Text layoutX="24.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="МебельТочкаРу" textAlignment="CENTER" wrappingWidth="299.35546875">
+         <font>
+            <Font name="Segoe UI Semibold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="243.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация" textAlignment="CENTER" wrappingWidth="360.396484375">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameField" layoutX="155.0" layoutY="167.0" promptText="Введите логин">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="155.0" layoutY="260.0" promptText="Введите пароль">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </PasswordField>
+      <Text layoutX="155.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите логин:" textAlignment="CENTER" wrappingWidth="311.0">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="155.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите пароль:" textAlignment="CENTER" wrappingWidth="311.0">
+         <font>
+            <Font name="Segoe UI Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="178.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleRegisterSubmitButton" text="Зарегистрироваться">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
